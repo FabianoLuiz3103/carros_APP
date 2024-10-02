@@ -11,27 +11,29 @@
         android:layout_gravity="center"
         android:layout_width="96dp"
         android:layout_height="96dp" />
+
     <EditText
         android:id="@+id/editTextCarroMarca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome do Jogo" />
+        android:hint="Marca do carro" />
 
     <EditText
-        android:maxLines="3"
-        android:minLines="3"
-        android:gravity="top"
-        android:id="@+id/editLogo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="URL da imagem do Jogo" />
-    <EditText
-        android:minLines="3"
-        android:gravity="top"
         android:id="@+id/editTextCarroModelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Descrição do Jogo" />
+        android:gravity="top"
+        android:hint="Modelo"
+        android:minLines="0" />
+
+    <EditText
+        android:id="@+id/editLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="URL da imagem do carro"
+        android:maxLines="3"
+        android:minLines="3" />
 
     <Button
         android:id="@+id/buttonAddCarro"

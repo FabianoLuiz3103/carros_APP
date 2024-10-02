@@ -22,7 +22,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
         android:maxLines="1"
-        android:text="Marca do Carro"
+        android:text="Marca do carro"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/buttonEdit"
         app:layout_constraintStart_toEndOf="@+id/logoCarro"
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:maxLines="3"
-        android:text="Modelo do Carro"
+        android:text="Modelo do carro"
         app:layout_constraintEnd_toEndOf="@+id/textViewCarroMarca"
         app:layout_constraintStart_toStartOf="@+id/textViewCarroMarca"
         app:layout_constraintTop_toBottomOf="@+id/textViewCarroMarca" />
@@ -57,5 +57,5 @@
 
         app:layout_constraintBottom_toBottomOf="@+id/textViewCarroMarca"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textViewCarroModelo" />
+        app:layout_constraintTop_toTopOf="@+id/textViewCarroMarca" />
 </androidx.constraintlayout.widget.ConstraintLayout>

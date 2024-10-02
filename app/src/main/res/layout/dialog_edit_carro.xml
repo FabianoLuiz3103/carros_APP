@@ -25,4 +25,12 @@
         android:layout_width ="match_parent"
         android:layout_height ="wrap_content"
         android:hint="Modelo do carro" />
+    <EditText
+        android:id="@+id/editLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="URL da imagem do carro"
+        android:maxLines="3"
+        android:minLines="3" />
 </LinearLayout >

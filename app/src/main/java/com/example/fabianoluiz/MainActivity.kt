@@ -1,6 +1,7 @@
 package com.example.fabianoluiz
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
@@ -64,6 +65,8 @@ class MainActivity : AppCompatActivity() {
         // Preenche os campos de texto com os dados do jogo atual
         dialogBinding.editTextCarroMarca.setText(carro.marca)
         dialogBinding.editTextCarroModelo.setText(carro.modelo)
+        dialogBinding.editLogo.setText(carro.urlImage)
+
         Glide.with(this)
             .load(carro.urlImage)
             .into(dialogBinding.logoCarro);
@@ -72,7 +75,8 @@ class MainActivity : AppCompatActivity() {
         builder.setPositiveButton("Salvar") { _, _ ->
             val updatedCarro = carro.copy(
                 marca = dialogBinding.editTextCarroMarca.text.toString(),
-                modelo = dialogBinding.editTextCarroModelo.text.toString()
+                modelo = dialogBinding.editTextCarroModelo.text.toString(),
+                urlImage = dialogBinding.editLogo.text.toString()
             )
             mainViewModel.update(updatedCarro)
         }
@@ -101,7 +105,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpLogo() {
         Glide
-            .with(this).load("https://static.vecteezy.com/system/resources/previews/006/404/900/original/board-game-logo-free-vector.jpg")
+            .with(this).load("https://cdn.dribbble.com/users/575086/screenshots/5795215/honda_civic.png")
             .into(binding.imageLogo)
     }
 }
